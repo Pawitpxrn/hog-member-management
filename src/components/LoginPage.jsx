@@ -45,36 +45,17 @@ export default function LoginPage({ onLoginSuccess }) {
     <div style={{
       minHeight: '100vh',
       width: '100%',
-      position: 'relative',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       padding: '20px',
-      backgroundImage: 'linear-gradient(rgba(10, 11, 13, 0.78), rgba(10, 11, 13, 0.88)), url("/harley_bg.jpg")',
+      backgroundImage: 'linear-gradient(rgba(10, 11, 13, 0.72), rgba(10, 11, 13, 0.85)), url("/harley_bg.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
     }}>
-      {/* Translucent Cyber-Grid Pattern Overlay */}
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundImage: `
-          linear-gradient(rgba(255, 102, 0, 0.07) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255, 102, 0, 0.07) 1px, transparent 1px)
-        `,
-        backgroundSize: '36px 36px',
-        pointerEvents: 'none',
-        zIndex: 1
-      }} />
-
       {/* Main Glassmorphism Login Card */}
       <div className="glass-panel" style={{
-        position: 'relative',
-        zIndex: 2,
         width: '100%',
         maxWidth: '440px',
         padding: '40px 34px',
