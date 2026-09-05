@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Lock, User, ShieldAlert, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function LoginPage({ onLoginSuccess }) {
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('password123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -38,11 +38,6 @@ export default function LoginPage({ onLoginSuccess }) {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleQuickLogin = (demoUser, demoPass) => {
-    setUsername(demoUser);
-    setPassword(demoPass);
   };
 
   return (
@@ -148,31 +143,6 @@ export default function LoginPage({ onLoginSuccess }) {
             <ArrowRight size={18} />
           </button>
         </form>
-
-        {/* Quick Demo Helper Cards */}
-        <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-color)' }}>
-          <p style={{ fontSize: '0.78rem', color: '#64748b', textAlign: 'center', marginBottom: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
-            <ShieldCheck size={14} color="#ff6600" /> คลิกปุ่มด้านล่างเพื่อทดสอบเข้าสู่ระบบ:
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-            <button
-              type="button"
-              className="btn-secondary"
-              onClick={() => handleQuickLogin('admin', 'password123')}
-              style={{ fontSize: '0.78rem', justifyContent: 'center', padding: '8px' }}
-            >
-              🔑 Administrator
-            </button>
-            <button
-              type="button"
-              className="btn-secondary"
-              onClick={() => handleQuickLogin('staff', 'password123')}
-              style={{ fontSize: '0.78rem', justifyContent: 'center', padding: '8px' }}
-            >
-              👤 Officer
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
