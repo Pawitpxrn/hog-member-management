@@ -82,7 +82,8 @@ function saveDb() {
 function initSeedData() {
   console.log('Initializing clean database for HOG Harley Member Management System...');
   
-  const passwordHash = bcrypt.hashSync('password123', 10);
+  const adminPasswordHash = bcrypt.hashSync('admin123', 10);
+  const staffPasswordHash = bcrypt.hashSync('staff123', 10);
   
   dbData.tag_masters = [
     { id: 'tag-001', name: 'Officer', expiry_type: 'LIFETIME', color: '#ff6600', description: 'กรรมการกลุ่ม / ผู้บริหาร (ไม่มีวันหมดอายุ)' },
@@ -94,7 +95,7 @@ function initSeedData() {
     {
       id: 'usr-admin-01',
       username: 'admin',
-      password_hash: passwordHash,
+      password_hash: adminPasswordHash,
       full_name: 'Administrator',
       role: 'admin',
       created_at: new Date('2025-01-01T08:00:00Z').toISOString()
@@ -102,7 +103,7 @@ function initSeedData() {
     {
       id: 'usr-staff-01',
       username: 'staff',
-      password_hash: passwordHash,
+      password_hash: staffPasswordHash,
       full_name: 'Officer',
       role: 'staff',
       created_at: new Date('2025-01-15T09:30:00Z').toISOString()

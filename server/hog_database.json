@@ -3,7 +3,7 @@
     {
       "id": "usr-admin-01",
       "username": "admin",
-      "password_hash": "$2b$10$WE1iM/Z4g1J7gVNAu4jyWOXeFY6/hqGZtXDQJffsrO.y5f6J.rTN6",
+      "password_hash": "$2b$10$DAJzJqu3Hn0Be4vCjgczwuSg4RJzICVkNNmDXJ5WB5DP3mTMRfBc.",
       "full_name": "Administrator",
       "role": "admin",
       "created_at": "2025-01-01T08:00:00.000Z"
@@ -11,7 +11,7 @@
     {
       "id": "usr-staff-01",
       "username": "staff",
-      "password_hash": "$2b$10$WE1iM/Z4g1J7gVNAu4jyWOXeFY6/hqGZtXDQJffsrO.y5f6J.rTN6",
+      "password_hash": "$2b$10$Jv53yzk/XBEm2JOdRVCxquWA0NZCcDQrqfiPPlX0A76MpJIQrYSSK",
       "full_name": "Officer",
       "role": "staff",
       "created_at": "2025-01-15T09:30:00.000Z"
