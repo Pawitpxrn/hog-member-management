@@ -1,0 +1,585 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "username": "admin",
+      "password_hash": "$2b$10$WE1iM/Z4g1J7gVNAu4jyWOXeFY6/hqGZtXDQJffsrO.y5f6J.rTN6",
+      "full_name": "Administrator",
+      "role": "admin",
+      "created_at": "2025-01-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-staff-01",
+      "username": "staff",
+      "password_hash": "$2b$10$WE1iM/Z4g1J7gVNAu4jyWOXeFY6/hqGZtXDQJffsrO.y5f6J.rTN6",
+      "full_name": "Officer",
+      "role": "staff",
+      "created_at": "2025-01-15T09:30:00.000Z"
+    }
+  ],
+  "members": [
+    {
+      "id": "mem-1788619049036",
+      "member_code": "1",
+      "name": "เทส",
+      "phone": "0889699999",
+      "tags": [],
+      "renewal_date": "2026-09-05",
+      "chapter_expiry_date": "",
+      "hog_int_expiry_date": "2027-09-05",
+      "notes": "",
+      "interaction_logs": [],
+      "created_by": "admin",
+      "updated_by": "admin",
+      "created_at": "2026-09-05T14:37:29.036Z",
+      "updated_at": "2026-09-05T14:37:40.106Z"
+    },
+    {
+      "id": "mem-1788619664424",
+      "member_code": "2",
+      "name": "นรินทร์ เฟื่องภักดี",
+      "phone": "0623688762",
+      "tags": [
+        "Officer"
+      ],
+      "renewal_date": "2026-09-05",
+      "chapter_expiry_date": "",
+      "hog_int_expiry_date": "2027-09-05",
+      "notes": "",
+      "interaction_logs": [],
+      "created_by": "admin",
+      "updated_by": "admin",
+      "created_at": "2026-09-05T14:47:44.424Z",
+      "updated_at": "2026-09-05T14:59:54.436Z"
+    },
+    {
+      "id": "mem-1788619823905",
+      "member_code": "3",
+      "name": "ราเวน ซอฟเทล",
+      "phone": "0888888888",
+      "tags": [
+        "Member"
+      ],
+      "renewal_date": "2026-09-05",
+      "chapter_expiry_date": "2027-09-05",
+      "hog_int_expiry_date": "2027-09-05",
+      "notes": "",
+      "interaction_logs": [],
+      "created_by": "admin",
+      "updated_by": "admin",
+      "created_at": "2026-09-05T14:50:23.905Z",
+      "updated_at": "2026-09-05T14:50:23.905Z"
+    },
+    {
+      "id": "mem-1788619979871",
+      "member_code": "4",
+      "name": "เรวาน เซลทอฟ",
+      "phone": "0999999999",
+      "tags": [
+        "Member"
+      ],
+      "renewal_date": "2025-07-01",
+      "chapter_expiry_date": "2025-07-01",
+      "hog_int_expiry_date": "2025-07-01",
+      "notes": "",
+      "interaction_logs": [
+        {
+          "id": "int-1788626053727",
+          "username": "admin",
+          "note": "อิ",
+          "slip_url": "/uploads/img-1788626046733-b22f.png",
+          "created_at": "2026-09-05T16:34:13.727Z"
+        },
+        {
+          "id": "int-1788623314903",
+          "username": "admin",
+          "note": "vbv",
+          "created_at": "2026-09-05T15:48:34.903Z"
+        },
+        {
+          "id": "int-1788622260731",
+          "username": "admin",
+          "note": "แนบรูป",
+          "created_at": "2026-09-05T15:31:00.731Z"
+        },
+        {
+          "id": "int-1788622035630",
+          "username": "admin",
+          "note": "เทสอิอิอิ",
+          "created_at": "2026-09-05T15:27:15.630Z"
+        },
+        {
+          "id": "int-1788621997714",
+          "username": "admin",
+          "note": "อิอล",
+          "created_at": "2026-09-05T15:26:37.714Z"
+        },
+        {
+          "id": "int-1788621992002",
+          "username": "admin",
+          "note": "เทส",
+          "created_at": "2026-09-05T15:26:32.002Z"
+        },
+        {
+          "id": "int-1788621893139",
+          "username": "admin",
+          "note": "เทส",
+          "created_at": "2026-09-05T15:24:53.139Z"
+        },
+        {
+          "id": "int-1788620579575",
+          "username": "admin",
+          "note": "แจ้งเตือน2",
+          "created_at": "2026-09-05T15:02:59.575Z"
+        },
+        {
+          "id": "int-1788620543666",
+          "username": "admin",
+          "note": "แจ้งเตือนต่ออายุ",
+          "created_at": "2026-09-05T15:02:23.666Z"
+        }
+      ],
+      "created_by": "admin",
+      "updated_by": "admin",
+      "created_at": "2026-09-05T14:52:59.871Z",
+      "updated_at": "2026-09-05T16:34:13.727Z",
+      "line_id": "TEST",
+      "profile_image_url": "/uploads/img-1788621877316-mk0p.jpg",
+      "last_slip_url": "/uploads/img-1788626046733-b22f.png"
+    },
+    {
+      "id": "mem-1788622608151",
+      "member_code": "5",
+      "name": "เทส เทส",
+      "phone": "0111111111",
+      "line_id": "Tievc",
+      "profile_image_url": "",
+      "tags": [
+        "Member"
+      ],
+      "renewal_date": "2026-09-01",
+      "chapter_expiry_date": "2027-09-01",
+      "hog_int_expiry_date": "2027-09-01",
+      "notes": "",
+      "interaction_logs": [
+        {
+          "id": "int-1788626101223",
+          "username": "admin",
+          "note": "รัดเี้ร่นายส",
+          "slip_url": "/uploads/img-1788626098042-uu89.png",
+          "created_at": "2026-09-05T16:35:01.223Z"
+        },
+        {
+          "id": "int-1788622809365",
+          "username": "admin",
+          "note": "เทส",
+          "created_at": "2026-09-05T15:40:09.365Z"
+        },
+        {
+          "id": "int-1788622712102",
+          "username": "admin",
+          "note": "ต่ออายุ",
+          "created_at": "2026-09-05T15:38:32.102Z"
+        }
+      ],
+      "created_by": "admin",
+      "updated_by": "admin",
+      "created_at": "2026-09-05T15:36:48.151Z",
+      "updated_at": "2026-09-05T16:35:01.223Z",
+      "last_slip_url": "/uploads/img-1788626098042-uu89.png"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "log-1788626101223",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788622608151",
+      "details": "บันทึกประวัติการติดต่อพร้อมแนบสลิปโอนเงิน (เทส เทส): \"รัดเี้ร่นายส\" [Slip: /uploads/img-1788626098042-uu89.png]",
+      "created_at": "2026-09-05T16:35:01.223Z"
+    },
+    {
+      "id": "log-1788626053727",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อพร้อมแนบสลิปโอนเงิน (เรวาน เซลทอฟ): \"อิ\" [Slip: /uploads/img-1788626046733-b22f.png]",
+      "created_at": "2026-09-05T16:34:13.727Z"
+    },
+    {
+      "id": "log-1788625696731",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T16:28:16.731Z"
+    },
+    {
+      "id": "log-1788625636140",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:27:16.140Z"
+    },
+    {
+      "id": "log-1788625544683",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:25:44.683Z"
+    },
+    {
+      "id": "log-1788625526172",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:25:26.172Z"
+    },
+    {
+      "id": "log-1788625388847",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:23:08.847Z"
+    },
+    {
+      "id": "log-1788625367990",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:22:47.990Z"
+    },
+    {
+      "id": "log-1788625184536",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:19:44.536Z"
+    },
+    {
+      "id": "log-1788625153930",
+      "username": "staff",
+      "action": "LOGIN",
+      "target_id": "usr-staff-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท STAFF",
+      "created_at": "2026-09-05T16:19:13.930Z"
+    },
+    {
+      "id": "log-1788624912270",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T16:15:12.270Z"
+    },
+    {
+      "id": "log-1788624612205",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T16:10:12.205Z"
+    },
+    {
+      "id": "log-1788624081295",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T16:01:21.295Z"
+    },
+    {
+      "id": "log-1788623912018",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T15:58:32.018Z"
+    },
+    {
+      "id": "log-1788623314903",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"vbv\"",
+      "created_at": "2026-09-05T15:48:34.903Z"
+    },
+    {
+      "id": "log-1788622809365",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788622608151",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เทส เทส): \"เทส\"",
+      "created_at": "2026-09-05T15:40:09.365Z"
+    },
+    {
+      "id": "log-1788622712102",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788622608151",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เทส เทส): \"ต่ออายุ\"",
+      "created_at": "2026-09-05T15:38:32.102Z"
+    },
+    {
+      "id": "log-1788622608151",
+      "username": "admin",
+      "action": "CREATE_MEMBER",
+      "target_id": "mem-1788622608151",
+      "details": "เพิ่มสมาชิกใหม่: เทส เทส (HOG-2026-0005) [Line: Tievc]",
+      "created_at": "2026-09-05T15:36:48.151Z"
+    },
+    {
+      "id": "log-1788622260731",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"แนบรูป\"",
+      "created_at": "2026-09-05T15:31:00.731Z"
+    },
+    {
+      "id": "log-1788622035630",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"เทสอิอิอิ\"",
+      "created_at": "2026-09-05T15:27:15.630Z"
+    },
+    {
+      "id": "log-1788621997714",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"อิอล\"",
+      "created_at": "2026-09-05T15:26:37.714Z"
+    },
+    {
+      "id": "log-1788621992002",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"เทส\"",
+      "created_at": "2026-09-05T15:26:32.002Z"
+    },
+    {
+      "id": "log-1788621893139",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"เทส\"",
+      "created_at": "2026-09-05T15:24:53.139Z"
+    },
+    {
+      "id": "log-1788621879172",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "แก้ไขข้อมูลสมาชิก: เรวาน เซลทอฟ (HOG-2026-0004) [Tags: Member]",
+      "created_at": "2026-09-05T15:24:39.172Z"
+    },
+    {
+      "id": "log-1788621714889",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "แก้ไขข้อมูลสมาชิก: เรวาน เซลทอฟ (HOG-2026-0004) [Tags: Member]",
+      "created_at": "2026-09-05T15:21:54.889Z"
+    },
+    {
+      "id": "log-1788621595628",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "แก้ไขข้อมูลสมาชิก: เรวาน เซลทอฟ (HOG-2026-0004) [Tags: Member]",
+      "created_at": "2026-09-05T15:19:55.628Z"
+    },
+    {
+      "id": "log-1788621547568",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "แก้ไขข้อมูลสมาชิก: เรวาน เซลทอฟ (HOG-2026-0004) [Tags: Member]",
+      "created_at": "2026-09-05T15:19:07.568Z"
+    },
+    {
+      "id": "log-1788620579575",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"แจ้งเตือน2\"",
+      "created_at": "2026-09-05T15:02:59.575Z"
+    },
+    {
+      "id": "log-1788620543666",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "บันทึกประวัติการติดต่อสมาชิก (เรวาน เซลทอฟ): \"แจ้งเตือนต่ออายุ\"",
+      "created_at": "2026-09-05T15:02:23.666Z"
+    },
+    {
+      "id": "log-1788620394437",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619664424",
+      "details": "แก้ไขข้อมูลสมาชิก: นรินทร์ เฟื่องภักดี (HOG-2026-0002) [Tags: Officer]",
+      "created_at": "2026-09-05T14:59:54.437Z"
+    },
+    {
+      "id": "log-1788620381382-a1zo",
+      "username": "admin",
+      "action": "ADD_TAG_MASTER",
+      "target_id": "tag-1788620381382",
+      "details": "เพิ่มมาสเตอร์แท็กใหม่: \"Officer\" (Active ตลอดชีพ)",
+      "created_at": "2026-09-05T14:59:41.382Z"
+    },
+    {
+      "id": "log-1788620379840-l46q",
+      "username": "admin",
+      "action": "DELETE_TAG_MASTER",
+      "target_id": "tag-001",
+      "details": "ลบมาสเตอร์แท็ก: \"Officer\" (อัปเดตสมาชิกที่ใช้แท็กนี้เรียบร้อย)",
+      "created_at": "2026-09-05T14:59:39.840Z"
+    },
+    {
+      "id": "log-1788620340809-rsue",
+      "username": "admin",
+      "action": "UPDATE_TAG_MASTER",
+      "target_id": "tag-001",
+      "details": "แก้ไขมาสเตอร์แท็ก: \"Officer\" -> \"Officer\" (LIFETIME)",
+      "created_at": "2026-09-05T14:59:00.809Z"
+    },
+    {
+      "id": "log-1788619979871",
+      "username": "admin",
+      "action": "CREATE_MEMBER",
+      "target_id": "mem-1788619979871",
+      "details": "เพิ่มสมาชิกใหม่: เรวาน เซลทอฟ (HOG-2026-0004) [Tags: Member]",
+      "created_at": "2026-09-05T14:52:59.871Z"
+    },
+    {
+      "id": "log-1788619823905",
+      "username": "admin",
+      "action": "CREATE_MEMBER",
+      "target_id": "mem-1788619823905",
+      "details": "เพิ่มสมาชิกใหม่: ราเวน ซอฟเทล (HOG-2026-0003) [Tags: Member]",
+      "created_at": "2026-09-05T14:50:23.905Z"
+    },
+    {
+      "id": "log-1788619664425",
+      "username": "admin",
+      "action": "CREATE_MEMBER",
+      "target_id": "mem-1788619664424",
+      "details": "เพิ่มสมาชิกใหม่: นรินทร์ เฟื่องภักดี (HOG-2026-0002) [Tags: Officer]",
+      "created_at": "2026-09-05T14:47:44.425Z"
+    },
+    {
+      "id": "log-1788619568426",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T14:46:08.426Z"
+    },
+    {
+      "id": "log-1788619562477",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T14:46:02.477Z"
+    },
+    {
+      "id": "log-1788619553161",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T14:45:53.162Z"
+    },
+    {
+      "id": "log-1788619097873-p91c",
+      "username": "admin",
+      "action": "DELETE_TAG_MASTER",
+      "target_id": "tag-1788619049036-cy1c",
+      "details": "ลบมาสเตอร์แท็ก: \"Regular\" (อัปเดตสมาชิกที่ใช้แท็กนี้เรียบร้อย)",
+      "created_at": "2026-09-05T14:38:17.873Z"
+    },
+    {
+      "id": "log-1788619093510-yr9y",
+      "username": "admin",
+      "action": "ADD_TAG_MASTER",
+      "target_id": "tag-1788619093510",
+      "details": "เพิ่มมาสเตอร์แท็กใหม่: \"Member\" (กำหนดวันหมดอายุ)",
+      "created_at": "2026-09-05T14:38:13.510Z"
+    },
+    {
+      "id": "log-1788619060106",
+      "username": "admin",
+      "action": "UPDATE_MEMBER",
+      "target_id": "mem-1788619049036",
+      "details": "แก้ไขข้อมูลสมาชิก: เทส (HOG-2026-0001) [Tags: Officer]",
+      "created_at": "2026-09-05T14:37:40.106Z"
+    },
+    {
+      "id": "log-1788619049036",
+      "username": "admin",
+      "action": "CREATE_MEMBER",
+      "target_id": "mem-1788619049036",
+      "details": "เพิ่มสมาชิกใหม่: เทส (HOG-2026-0001) [Tags: Regular]",
+      "created_at": "2026-09-05T14:37:29.036Z"
+    },
+    {
+      "id": "log-1788619021141-dehg",
+      "username": "admin",
+      "action": "DELETE_TAG_MASTER",
+      "target_id": "tag-002",
+      "details": "ลบมาสเตอร์แท็ก: \"VIP\" (อัปเดตสมาชิกที่ใช้แท็กนี้เรียบร้อย)",
+      "created_at": "2026-09-05T14:37:01.141Z"
+    },
+    {
+      "id": "log-1788619018741-efqv",
+      "username": "admin",
+      "action": "DELETE_TAG_MASTER",
+      "target_id": "tag-003",
+      "details": "ลบมาสเตอร์แท็ก: \"Regular\" (อัปเดตสมาชิกที่ใช้แท็กนี้เรียบร้อย)",
+      "created_at": "2026-09-05T14:36:58.741Z"
+    },
+    {
+      "id": "log-001",
+      "username": "admin",
+      "action": "SYSTEM_INIT",
+      "target_id": "SYSTEM",
+      "details": "ล้างข้อมูลและเริ่มต้นระบบ HOG Member Management System พร้อมใช้งานจริง",
+      "created_at": "2026-09-05T14:32:31.137Z"
+    }
+  ],
+  "sheets_config": {
+    "webhook_url": "https://script.google.com/macros/s/AKfycbyN0wIg0Expbt2-OnMUh_hDlXYc3Y-A1f8-w0gbgsX8KuAHgMEtQCcXhrPtXnU_cbC-TQ/exec",
+    "enabled": true,
+    "last_sync": "2026-09-05T15:46:45.052Z",
+    "sync_status": "ERROR"
+  },
+  "tag_masters": [
+    {
+      "id": "tag-1788619093510",
+      "name": "Member",
+      "expiry_type": "EXPIRY_REQUIRED",
+      "color": "#10b981",
+      "description": ""
+    },
+    {
+      "id": "tag-1788620381382",
+      "name": "Officer",
+      "expiry_type": "LIFETIME",
+      "expiry_rule_label": "Officer",
+      "color": "#eab308",
+      "description": ""
+    }
+  ]
+}

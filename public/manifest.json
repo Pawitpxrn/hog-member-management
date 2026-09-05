@@ -1,0 +1,21 @@
+{
+  "short_name": "HOG Member",
+  "name": "HOG Harley Member Management System",
+  "icons": [
+    {
+      "src": "/hog_logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/hog_logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0a0b0d",
+  "theme_color": "#ff6600",
+  "display": "standalone",
+  "orientation": "portrait"
+}
