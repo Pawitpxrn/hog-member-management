@@ -15,6 +15,14 @@
       "full_name": "Officer",
       "role": "staff",
       "created_at": "2025-01-15T09:30:00.000Z"
+    },
+    {
+      "id": "usr-1788629202603",
+      "username": "aompws",
+      "password_hash": "$2b$10$J7hqyIYir5fjFIYW/KMyT.93yF4vVch/NcXkK96IVVnL4u4YBBfvm",
+      "full_name": "Administrator",
+      "role": "admin",
+      "created_at": "2026-09-05T17:26:42.603Z"
     }
   ],
   "members": [
@@ -190,6 +198,30 @@
     }
   ],
   "audit_logs": [
+    {
+      "id": "log-1788629202603",
+      "username": "admin",
+      "action": "CREATE_USER",
+      "target_id": "usr-1788629202603",
+      "details": "สร้างผู้ใช้งานใหม่: aompws (บทบาท: ADMIN)",
+      "created_at": "2026-09-05T17:26:42.603Z"
+    },
+    {
+      "id": "log-1788629163246",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T17:26:03.246Z"
+    },
+    {
+      "id": "log-1788629140657",
+      "username": "admin",
+      "action": "LOGIN",
+      "target_id": "usr-admin-01",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T17:25:40.657Z"
+    },
     {
       "id": "log-1788626101223",
       "username": "admin",
@@ -562,8 +594,8 @@
   "sheets_config": {
     "webhook_url": "https://script.google.com/macros/s/AKfycbyN0wIg0Expbt2-OnMUh_hDlXYc3Y-A1f8-w0gbgsX8KuAHgMEtQCcXhrPtXnU_cbC-TQ/exec",
     "enabled": true,
-    "last_sync": "2026-09-05T15:46:45.052Z",
-    "sync_status": "ERROR"
+    "last_sync": "2026-09-05T17:26:45.880Z",
+    "sync_status": "ONLINE"
   },
   "tag_masters": [
     {

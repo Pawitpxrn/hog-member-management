@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Lock, User, ShieldAlert, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Lock, User, ShieldAlert, ArrowRight, Eye, EyeOff } from 'lucide-react';
 
 export default function LoginPage({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -47,40 +48,45 @@ export default function LoginPage({ onLoginSuccess }) {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '20px',
-      background: 'radial-gradient(circle at 50% 30%, rgba(255, 102, 0, 0.08) 0%, #0a0b0d 70%)'
+      background: 'radial-gradient(circle at 50% 35%, rgba(255, 102, 0, 0.12) 0%, #0a0b0d 75%)'
     }}>
       <div className="glass-panel" style={{
         width: '100%',
         maxWidth: '440px',
-        padding: '36px',
-        border: '1px solid rgba(255, 102, 0, 0.3)',
-        boxShadow: '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(255,102,0,0.15)'
+        padding: '38px 32px',
+        borderRadius: '20px',
+        border: '1.5px solid rgba(255, 102, 0, 0.4)',
+        boxShadow: '0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(255,102,0,0.2)',
+        background: 'rgba(15, 23, 42, 0.75)',
+        backdropFilter: 'blur(20px)'
       }}>
         {/* Emblem & Branding Header */}
-        <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '30px' }}>
           <div style={{
-            width: '80px',
-            height: '80px',
-            margin: '0 auto 16px auto',
-            borderRadius: '16px',
+            width: '90px',
+            height: '90px',
+            margin: '0 auto 18px auto',
+            borderRadius: '20px',
             overflow: 'hidden',
-            border: '2px solid #ff6600',
-            boxShadow: '0 0 25px rgba(255, 102, 0, 0.4)',
-            background: '#000'
+            border: '2.5px solid #ff6600',
+            boxShadow: '0 0 35px rgba(255, 102, 0, 0.5)',
+            background: '#000',
+            padding: '6px'
           }}>
             <img src="/logo.jpg" alt="HOG Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
 
           <h1 style={{
-            fontSize: '1.45rem',
+            fontSize: '1.55rem',
             fontWeight: 900,
             color: '#ffffff',
-            letterSpacing: '1px',
-            textTransform: 'uppercase'
+            letterSpacing: '1.5px',
+            textTransform: 'uppercase',
+            lineHeight: 1.2
           }}>
-            HOG <span style={{ color: '#ff6600' }}>MEMBER MANAGEMENT</span>
+            HOG <span style={{ color: '#ff6600', textShadow: '0 0 20px rgba(255,102,0,0.6)' }}>MEMBER MANAGEMENT</span>
           </h1>
-          <p style={{ fontSize: '0.82rem', color: '#94a3b8', marginTop: '4px' }}>
+          <p style={{ fontSize: '0.82rem', color: '#94a3b8', marginTop: '6px', fontWeight: 500 }}>
             เข้าสู่ระบบสำหรับเจ้าหน้าที่และผู้ดูแลระบบ (HOG-MMS)
           </p>
         </div>
@@ -92,7 +98,7 @@ export default function LoginPage({ onLoginSuccess }) {
             border: '1px solid rgba(239, 68, 68, 0.4)',
             color: '#f87171',
             padding: '12px 14px',
-            borderRadius: '8px',
+            borderRadius: '10px',
             marginBottom: '20px',
             display: 'flex',
             alignItems: 'center',
@@ -106,15 +112,23 @@ export default function LoginPage({ onLoginSuccess }) {
 
         {/* Login Form */}
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label className="form-label">Username</label>
+          <div className="form-group" style={{ marginBottom: '18px' }}>
+            <label className="form-label" style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 600 }}>Username (ชื่อเข้าใช้ระบบ)</label>
             <div style={{ position: 'relative' }}>
-              <User size={18} color="#94a3b8" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+              <User size={18} color="#ff6600" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
               <input
                 type="text"
                 className="form-input"
                 placeholder="กรอกชื่อผู้ใช้..."
-                style={{ width: '100%', paddingLeft: '42px' }}
+                style={{
+                  width: '100%',
+                  paddingLeft: '44px',
+                  height: '46px',
+                  borderRadius: '10px',
+                  fontSize: '0.9rem',
+                  borderColor: 'rgba(255, 102, 0, 0.3)',
+                  background: 'rgba(10, 11, 13, 0.8)'
+                }}
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
@@ -122,23 +136,66 @@ export default function LoginPage({ onLoginSuccess }) {
             </div>
           </div>
 
-          <div className="form-group" style={{ marginBottom: '24px' }}>
-            <label className="form-label">Password</label>
+          <div className="form-group" style={{ marginBottom: '28px' }}>
+            <label className="form-label" style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 600 }}>Password (รหัสผ่าน)</label>
             <div style={{ position: 'relative' }}>
-              <Lock size={18} color="#94a3b8" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+              <Lock size={18} color="#ff6600" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
               <input
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 className="form-input"
                 placeholder="กรอกรหัสผ่าน..."
-                style={{ width: '100%', paddingLeft: '42px' }}
+                style={{
+                  width: '100%',
+                  paddingLeft: '44px',
+                  paddingRight: '44px',
+                  height: '46px',
+                  borderRadius: '10px',
+                  fontSize: '0.9rem',
+                  borderColor: 'rgba(255, 102, 0, 0.3)',
+                  background: 'rgba(10, 11, 13, 0.8)'
+                }}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                style={{
+                  position: 'absolute',
+                  right: '14px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'transparent',
+                  border: 'none',
+                  color: '#94a3b8',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  padding: 0
+                }}
+                title={showPassword ? 'ซ่อนรหัสผ่าน' : 'แสดงรหัสผ่าน'}
+              >
+                {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+              </button>
             </div>
           </div>
 
-          <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '12px' }} disabled={loading}>
+          <button
+            type="submit"
+            className="btn-primary"
+            style={{
+              width: '100%',
+              justify: 'center',
+              height: '48px',
+              borderRadius: '10px',
+              fontSize: '0.95rem',
+              fontWeight: 800,
+              boxShadow: '0 4px 20px rgba(255, 102, 0, 0.4)',
+              background: 'linear-gradient(135deg, #ff6600 0%, #d95300 100%)'
+            }}
+            disabled={loading}
+          >
             <span>{loading ? 'กำลังตรวจสอบ...' : 'เข้าสู่ระบบ (Sign In)'}</span>
             <ArrowRight size={18} />
           </button>
