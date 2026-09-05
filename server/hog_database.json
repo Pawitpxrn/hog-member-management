@@ -199,6 +199,14 @@
   ],
   "audit_logs": [
     {
+      "id": "log-1788629368939",
+      "username": "aompws",
+      "action": "LOGIN",
+      "target_id": "usr-1788629202603",
+      "details": "เข้าสู่ระบบสำเร็จในบทบาท ADMIN",
+      "created_at": "2026-09-05T17:29:28.939Z"
+    },
+    {
       "id": "log-1788629202603",
       "username": "admin",
       "action": "CREATE_USER",
