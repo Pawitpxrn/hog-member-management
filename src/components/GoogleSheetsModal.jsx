@@ -202,9 +202,6 @@ export default function GoogleSheetsModal({ isOpen, onClose, onSaveConfig, onSyn
                 onChange={(e) => setWebhookUrl(e.target.value)}
               />
             </div>
-            <span style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
-              ตัวอย่าง: https://script.google.com/macros/s/AKfycbx.../exec
-            </span>
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '20px' }}>

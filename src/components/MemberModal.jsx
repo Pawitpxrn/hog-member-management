@@ -312,7 +312,7 @@ export default function MemberModal({ isOpen, onClose, onSave, memberData, isEdi
             <input
               type="text"
               className="form-input"
-              placeholder="ตัวอย่าง: สมชาย สายซิ่ง"
+              placeholder="ชื่อ-นามสกุล สมาชิก"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
@@ -328,7 +328,7 @@ export default function MemberModal({ isOpen, onClose, onSave, memberData, isEdi
                 <input
                   type="tel"
                   className="form-input"
-                  placeholder="081-234-5678"
+                  placeholder="เบอร์โทรศัพท์"
                   style={{ paddingLeft: '36px', width: '100%' }}
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -342,7 +342,7 @@ export default function MemberModal({ isOpen, onClose, onSave, memberData, isEdi
               <input
                 type="text"
                 className="form-input"
-                placeholder="เช่น @somchai_hog"
+                placeholder="Line ID"
                 value={formData.line_id}
                 onChange={(e) => setFormData({ ...formData, line_id: e.target.value })}
               />
@@ -411,7 +411,7 @@ export default function MemberModal({ isOpen, onClose, onSave, memberData, isEdi
                 type="text"
                 className="form-input"
                 style={{ padding: '6px 12px', fontSize: '0.85rem' }}
-                placeholder="พิมพ์สร้างแท็กใหม่ เช่น Marshall, Founder, Sponsor..."
+                placeholder="พิมพ์แท็กใหม่..."
                 value={customTagInput}
                 onChange={(e) => setCustomTagInput(e.target.value)}
                 onKeyDown={(e) => {
@@ -505,7 +505,7 @@ export default function MemberModal({ isOpen, onClose, onSave, memberData, isEdi
             <textarea
               rows="3"
               className="form-textarea"
-              placeholder="ระบุรุ่นรถฮาร์ลีย์ หรือรายละเอียดอื่นๆ (ถ้ามี)..."
+              placeholder="หมายเหตุเพิ่มเติม / รุ่นรถ..."
               value={formData.notes}
               onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
             />

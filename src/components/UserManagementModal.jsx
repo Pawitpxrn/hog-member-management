@@ -229,7 +229,7 @@ export default function UserManagementModal({ isOpen, onClose, currentUser }) {
                   <input
                     type="text"
                     className="form-input"
-                    placeholder="เช่น officer01"
+                    placeholder="Username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     disabled={!!editingUser}
@@ -243,7 +243,7 @@ export default function UserManagementModal({ isOpen, onClose, currentUser }) {
                   <input
                     type="text"
                     className="form-input"
-                    placeholder="เช่น คุณสมชาย (เจ้าหน้าที่)"
+                    placeholder="ชื่อ-นามสกุล"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     style={{ fontSize: '0.85rem' }}

@@ -213,7 +213,7 @@ export default function InteractionLogModal({ isOpen, onClose, member, onAddInte
               <input
                 type="text"
                 className="form-input"
-                placeholder='ตัวอย่าง: "ต่ออายุสมาชิก 1 ปี แนบ Attachment เรียบร้อยแล้ว"'
+                placeholder="บันทึกประวัติการติดต่อ / รายละเอียดการต่ออายุ..."
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
                 style={{ width: '100%', marginBottom: '8px' }}

@@ -156,7 +156,7 @@ export default function TagMasterModal({ isOpen, onClose, tags, onSaveTag, onDel
               <input
                 type="text"
                 className="form-input"
-                placeholder="เช่น Marshall, VIP Founder, Chapter Pres..."
+                placeholder="ชื่อแท็ก"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
